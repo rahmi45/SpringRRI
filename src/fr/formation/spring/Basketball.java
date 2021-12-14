@@ -1,4 +1,4 @@
-package fr.formation.model;
+package fr.formation.spring;
 
 public class Basketball implements Sport{
 
