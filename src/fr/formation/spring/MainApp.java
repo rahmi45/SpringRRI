@@ -1,6 +1,6 @@
 package fr.formation.spring;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+//import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
 
@@ -16,11 +16,11 @@ public class MainApp {
 //		Sport footb = new Volleyball();
 //		footb.start();
 		
-		// load the spring configuration file 
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Sport foot = context.getBean("mySport", Sport.class);
-		foot.start();
-		context.close();
+//		// load the spring configuration file 
+//		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+//		Sport foot = context.getBean("mySport", Sport.class);
+//		foot.start();
+//		context.close();
 
 	}
 
