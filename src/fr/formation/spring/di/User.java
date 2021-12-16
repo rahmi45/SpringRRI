@@ -5,13 +5,18 @@ public class User implements IUser {
 	private IPerson person;
 	
 
-	public User(IPerson person) {
-		this.person = person;
-	}
+//	public User(IPerson person) {
+//		this.person = person;
+//	}
 
 	@Override
 	public void getPerson() {
 		 this.person.begain();;
+	}
+	
+	
+	public void setPerson(IPerson person) {
+		this.person = person;
 	}
 
 	@Override
