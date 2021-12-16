@@ -13,6 +13,8 @@
     
     <bean id="user" class="fr.formation.spring.di.User">
     	<property name="person" ref="person"></property>
+    	<property name="email" value="spring.di@gmail.com"></property>
+    	<property name="team" value="SPG"></property>
     </bean>
     
      <bean id="person" class="fr.formation.spring.di.Person"> 

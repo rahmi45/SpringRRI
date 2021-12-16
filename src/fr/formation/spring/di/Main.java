@@ -24,7 +24,8 @@ public class Main {
 		IUser user = context.getBean("user", User.class);
 		//Call methods on the Bean
 		//user.start();
-		user.getPerson();
+		//user.getPerson();
+		System.out.println(user.getEmail()+ "-" + user.getTeam() ); 
 		
 //		IPerson person = context.getBean("person", Person.class);
 //		person.begain();
