@@ -1,38 +1,60 @@
 package fr.formation.spring.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 
 @Component("master")
 public class Master implements IMaster {
 	
+	private ICompany iC;
+	
 	@Autowired
-	private ISport spInterface;
-	
-//	@Autowired
-//	public Master(ISport spInterface) {
-//		this.spInterface = spInterface;
-//	}
+	public Master(ICompany iC) {
+		this.iC = iC;
+	}
 
-//	@Autowired
-//	public void setSpInterface(ISport spInterface) {
-//		this.spInterface = spInterface;
-//	}
-
-	
 	@Override
 	public void name() {
-		System.out.println("I am Master");
+		iC.Start();
+
 		
 	}
 
-
 	@Override
 	public void callMysSport() {
-		spInterface.mySport();
+		// TODO Auto-generated method stub
+		
 	}
 	
-	
+//	@Autowired
+//	private ISport spInterface;
+//	
+////	@Autowired
+////	public Master(ISport spInterface) {
+////		this.spInterface = spInterface;
+////	}
+//
+////	@Autowired
+////	public void setSpInterface(ISport spInterface) {
+////		this.spInterface = spInterface;
+////	}
+//
+//	
+//	@Override
+//	public void name() {
+//		System.out.println("I am Master");
+//		
+//	}
+//
+//
+//	@Override
+//	public void callMysSport() {
+//		spInterface.mySport();
+//	}
+//	
+//	
 	
 
 }
