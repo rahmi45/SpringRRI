@@ -12,12 +12,13 @@ public class MainAnnotation {
 						new ClassPathXmlApplicationContext("applicationContext.xml");
 				
 		// Retrieve Bean from spring container
-//		IMaster ms = context.getBean("master", IMaster.class);
+		IMaster ms = context.getBean("master", IMaster.class);
 		
-		ISport sp = context.getBean("tennisSport", ISport.class);
+//		ISport sp = context.getBean("tennisSport", ISport.class);
 		
 		//ms.name();
-		sp.mySport();
+		ms.callMysSport();
+//		sp.mySport();
 		
 		context.close();
 
