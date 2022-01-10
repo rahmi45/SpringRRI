@@ -10,15 +10,17 @@
 <!--     <bean id="user" class="fr.formation.spring.di.User"> -->
 <!--     	<constructor-arg ref="person"></constructor-arg> -->
 <!--     </bean> -->
-    
-    <bean id="user" class="fr.formation.spring.di.User">
+    <context:property-placeholder location="data.properties"/>
+      <bean id="user" class="fr.formation.spring.di.User">
     	<property name="person" ref="person"></property>
-    	<property name="email" value="spring.di@gmail.com"></property>
-    	<property name="team" value="SPG"></property>
-    </bean>
+    	<property name="email" value="${us.email}"></property>
+    	<property name="team" value="${us.team}"></property>
+<!--     	<property name="email" value="spring.di@gmail.com"></property> -->
+<!--     	<property name="team" value="SPG"></property> -->
+   	  </bean>
     
-     <bean id="person" class="fr.formation.spring.di.Person"> 
-    </bean>
+      <bean id="person" class="fr.formation.spring.di.Person"> 
+      </bean>
 <!--     <bean id="mySport" class="fr.formation.spring.Volleyball"> -->
 <!--     </bean> -->
 </beans>
