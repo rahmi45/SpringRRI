@@ -6,24 +6,28 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:component-scan base-package="fr.formation.spring.annotation"></context:component-scan>
+
+</beans>
+
     
 <!--     <bean id="user" class="fr.formation.spring.di.User"> -->
 <!--     	<constructor-arg ref="person"></constructor-arg> -->
 <!--     </bean> -->
-    <context:property-placeholder location="data.properties"/>
-      <bean id="user" 
-            class="fr.formation.spring.di.User"
-            init-method="doStart"
-            destroy-method="doEnd">
-    	<property name="person" ref="person"></property>
-    	<property name="email" value="${us.email}"></property>
-    	<property name="team" value="${us.team}"></property>
+<!--     <context:property-placeholder location="data.properties"/> -->
+<!--       <bean id="user"  -->
+<!--             class="fr.formation.spring.di.User" -->
+<!--             init-method="doStart" -->
+<!--             destroy-method="doEnd"> -->
+<!--     	<property name="person" ref="person"></property> -->
+<!--     	<property name="email" value="${us.email}"></property> -->
+<!--     	<property name="team" value="${us.team}"></property> -->
 <!--     	<property name="email" value="spring.di@gmail.com"></property> -->
 <!--     	<property name="team" value="SPG"></property> -->
-   	  </bean>
+<!--    	  </bean> -->
     
-      <bean id="person" class="fr.formation.spring.di.Person"> 
-      </bean>
+<!--       <bean id="person" class="fr.formation.spring.di.Person">  -->
+<!--       </bean> -->
 <!--     <bean id="mySport" class="fr.formation.spring.Volleyball"> -->
 <!--     </bean> -->
-</beans>
