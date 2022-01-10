@@ -11,7 +11,10 @@
 <!--     	<constructor-arg ref="person"></constructor-arg> -->
 <!--     </bean> -->
     <context:property-placeholder location="data.properties"/>
-      <bean id="user" class="fr.formation.spring.di.User" scope="prototype">
+      <bean id="user" 
+            class="fr.formation.spring.di.User"
+            init-method="doStart"
+            destroy-method="doEnd">
     	<property name="person" ref="person"></property>
     	<property name="email" value="${us.email}"></property>
     	<property name="team" value="${us.team}"></property>

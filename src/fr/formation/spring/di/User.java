@@ -47,5 +47,16 @@ public class User implements IUser {
 		System.out.println("I am User");
 		
 	}
+	
+	public void doStart() {
+		System.out.println("Start ...");
+		
+	}
+	
+	public void doEnd() {
+		
+		System.out.println("...End");
+		
+	}
 
 }
