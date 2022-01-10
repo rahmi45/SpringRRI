@@ -13,7 +13,6 @@ public class Master implements IMaster {
 	@Qualifier("client")
 	private ICompany iC;
 	
-	
 //	public Master(ICompany iC) {
 //		this.iC = iC;
 //	}
