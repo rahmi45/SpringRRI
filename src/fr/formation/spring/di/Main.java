@@ -22,10 +22,16 @@ public class Main {
 		
 		// Retrieve Bean from spring container
 		IUser user = context.getBean("user", User.class);
+		
+		IUser user1 = context.getBean("user", User.class);
+		
+		System.out.println(user);
+		System.out.println(user1);
+		System.out.println(user == user1);
 		//Call methods on the Bean
 		//user.start();
 		//user.getPerson();
-		System.out.println(user.getEmail()+ " - " + user.getTeam() ); 
+		//System.out.println(user.getEmail()+ " - " + user.getTeam() ); 
 		
 //		IPerson person = context.getBean("person", Person.class);
 //		person.begain();
