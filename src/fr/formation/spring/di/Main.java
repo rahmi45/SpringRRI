@@ -23,7 +23,7 @@ public class Main {
 		// Retrieve Bean from spring container
 		IUser user = context.getBean("user", User.class);
 		
-		IUser user1 = context.getBean("user", User.class);
+//		IUser user1 = context.getBean("user", User.class);
 		
 //		System.out.println(user);
 //		System.out.println(user1);
