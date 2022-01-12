@@ -14,15 +14,19 @@ public class MainNoXml {
 //		im.name();
 //		im.getSport();
 		
-		IMaster im = context.getBean("myMaster" , IMaster.class);
+//		IMaster im = context.getBean("myMaster" , IMaster.class);
 		
 		//System.out.println(im);
-	    im.name();
-		im.getSport();
+//	    im.name();
+//		im.getSport();
+		
+		Manager mg =  context.getBean("manager" , Manager.class);
+		
+		System.out.println(mg.getMail());
+		System.out.println(mg.getTeam());
 		
 		context.close();
-
-		
+	
 
 	}
 
