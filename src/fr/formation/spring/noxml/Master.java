@@ -7,17 +7,17 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 
-@Component
+//@Component
 public class Master implements IMaster {
 	
-	@Autowired
-	@Qualifier("foot")
+	//@Autowired
+	//@Qualifier("foot")
 	private ISport sp;
 	
-//	@Autowired
-//	public Master(ISport sp) {
-//		this.sp = sp;
-//	}
+
+	public Master(ISport sp) {
+		this.sp = sp;
+	}
 
 
 	@Override

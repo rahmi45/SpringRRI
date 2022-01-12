@@ -2,7 +2,7 @@ package fr.formation.spring.noxml;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Foot implements ISport{
 
 	@Override
