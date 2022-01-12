@@ -17,12 +17,9 @@ public class MainLifeCycle {
 		// Retrieve Bean from spring container
 		IPerson admin1 = context.getBean("admin", IPerson.class);
 		
-		// Retrieve Bean from spring container
-		IPerson admin2 = context.getBean("admin", IPerson.class);
 		
-		System.out.println(admin1);//admin1.name();
-		System.out.println(admin2);
-		System.out.println(admin1 == admin2);
+		admin1.name();
+
 				
 
 				
